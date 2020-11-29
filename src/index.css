@@ -17,6 +17,12 @@
     url('../src/Components/Assets/fonts/B_Mitra.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Sahel';
+  src: local('Sahel'),
+    url('../src/Components/Assets/fonts/Sahel.ttf') format('truetype');
+}
+
 body {
-  font-family: B_Nazanin;
+  font-family: Sahel;
 }

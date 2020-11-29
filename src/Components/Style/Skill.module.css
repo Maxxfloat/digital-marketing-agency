@@ -1,0 +1,22 @@
+.myContainer {
+  background-image: linear-gradient(to top left, #f5b461, #ec524b);
+}
+
+/* @media screen and (min-width: 601px) {
+  .myText {
+    font-size: 1.3rem;
+    margin: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myText {
+    font-size: 0.6rem;
+    margin: 10%;
+  }
+} */
+
+.myText {
+  font-size: 2.2vw;
+  margin: 10%;
+}

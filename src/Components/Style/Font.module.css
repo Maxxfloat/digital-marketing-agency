@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Sahel-Black';
+  src: local('Sahel-Black'),
+    url('../Assets/fonts/Sahel-Black.ttf') format('truetype');
+}
+
+.sahelBlack {
+  font-family: Sahel-Black;
+}
