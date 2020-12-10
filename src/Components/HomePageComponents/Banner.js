@@ -1,7 +1,8 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
-import myBannerStyle from '../Style/Banner.module.css';
+import myBannerStyle from "../Style/Banner.module.css";
 
 const Banner = () => {
   return (
@@ -17,12 +18,14 @@ const Banner = () => {
               >
                 ما چیکار می‌کنیم
               </button>
-              <button
-                type="button"
-                className={`${myBannerStyle.myBannerBtn} ${myBannerStyle.myTempStyle} mx-2`}
-              >
-                خدمات
-              </button>
+              <Link to="/signup">
+                <button
+                  type="button"
+                  className={`${myBannerStyle.myBannerBtn} ${myBannerStyle.myTempStyle} mx-2`}
+                >
+                  ثبت نام
+                </button>
+              </Link>
             </div>
           </div>
         </Container>

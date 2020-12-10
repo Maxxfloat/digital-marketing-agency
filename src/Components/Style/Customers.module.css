@@ -1,0 +1,17 @@
+.myContainer {
+  background-image: linear-gradient(
+    to left,
+    #9ad3bc,
+    #f3eac2,
+    #9ad3bc,
+    #f3eac2
+  );
+}
+
+.myCardTitle {
+  font-size: 2.2vh;
+}
+
+.myCardImage {
+  border-radius: 5%;
+}
