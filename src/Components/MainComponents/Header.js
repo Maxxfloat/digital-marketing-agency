@@ -43,13 +43,6 @@ const Header = () => {
             >
               ارتباط با ما
             </Nav.Link>
-            <Nav.Link
-              as={NavLink}
-              to="/services"
-              className={`${myStyle.myHeaderBtn}`}
-            >
-              خدمات
-            </Nav.Link>
           </Nav>
           <Nav className="mr-auto">
             <Nav.Link

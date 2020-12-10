@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
-import { Form, Card, Alert, Container, Button } from 'react-bootstrap';
+import React, { useRef, useState } from "react";
+import { Form, Card, Alert, Container, Button } from "react-bootstrap";
 
 const Signup = () => {
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const emailRef = useRef();
@@ -14,12 +14,12 @@ const Signup = () => {
     event.preventDefault();
 
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError('Password Not Confirm');
+      return setError("Password Not Confirm");
     }
     try {
-      setError('');
+      setError("");
     } catch {
-      setError('Failed To Create Account');
+      setError("Failed To Create Account");
     }
     setLoading(false);
   };
@@ -27,9 +27,9 @@ const Signup = () => {
   return (
     <Container
       className="d-flex align-items-center justify-content-center"
-      style={{ height: '90vh' }}
+      style={{ height: "90vh" }}
     >
-      <div className="w-100" style={{ maxWidth: '400px' }}>
+      <div className="w-100 text-right" style={{ maxWidth: "400px" }}>
         <Card>
           <Card.Body>
             <Form onSubmit={submitHnadler}>
@@ -39,7 +39,7 @@ const Signup = () => {
                 <Form.Control
                   type="email"
                   ref={emailRef}
-                  placeholder="Enter Email"
+                  placeholder="ایمیل خودرا وارد کنید"
                 />
               </Form.Group>
               <Form.Group>
@@ -47,7 +47,7 @@ const Signup = () => {
                 <Form.Control
                   type="password"
                   ref={passwordRef}
-                  placeholder="Enter Password"
+                  placeholder="رمز را وارد کنید"
                 />
               </Form.Group>
               <Form.Group>
@@ -55,7 +55,7 @@ const Signup = () => {
                 <Form.Control
                   type="password"
                   ref={passwordConfirmRef}
-                  placeholder="Enter Confirm Password"
+                  placeholder="تایید رمز عبور"
                 />
               </Form.Group>
               <Button variant="primary" disabled={loading} type="submit">
